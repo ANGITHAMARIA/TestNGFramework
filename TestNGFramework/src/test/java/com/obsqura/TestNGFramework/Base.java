@@ -1,5 +1,7 @@
 package com.obsqura.TestNGFramework;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -21,13 +23,15 @@ public class Base
 	        
 	        driver.get("https://selenium.obsqurazone.com/simple-form-demo.php");
 	        driver.manage().window().maximize();
+	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 	    }
 	    public void driverClose()
 	    {
 	        driver.close();
 	    }
 	    
-	    @AfterMethod
+	 //   @AfterMethodSe
 	    public void driverQuit()
 	    {
 	        driver.quit();

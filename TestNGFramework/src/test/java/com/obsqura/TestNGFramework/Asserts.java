@@ -3,6 +3,7 @@ package com.obsqura.TestNGFramework;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertNotEquals;
+import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertNull;
 import static org.testng.Assert.assertTrue;
 
@@ -83,6 +84,13 @@ public class Asserts extends Base {
 	{
 		String value=null;
 		assertNull(value,"Value is not null");
+	}
+	
+	@Test
+	public void assertNotNullSample()
+	{
+		String value="test";
+		assertNotNull(value,"Value is null");
 	}
 	
 }

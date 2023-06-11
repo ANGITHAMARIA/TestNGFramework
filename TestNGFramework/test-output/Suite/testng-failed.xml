@@ -3,13 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.obsqura.TestNGFramework.Asserts">
+      <class name="com.obsqura.TestNGFramework.JavaScriptExecutorSample">
         <methods>
+          <include name="javaScriptExecutorSample"/>
           <include name="initializeBrowser"/>
-          <include name="assertNullSample"/>
-          <include name="driverQuit"/>
         </methods>
-      </class> <!-- com.obsqura.TestNGFramework.Asserts -->
+      </class> <!-- com.obsqura.TestNGFramework.JavaScriptExecutorSample -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

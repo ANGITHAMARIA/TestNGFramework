@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.obsqura.TestNGFramework.AnnotationSample">
+      <class name="com.obsqura.TestNGFramework.DropDown">
         <methods>
-          <include name="beforeMethod"/>
+          <include name="toChangeLanguageInSeleniumDevPage"/>
           <include name="initializeBrowser"/>
-          <include name="testCase1"/>
-          <include name="afterMethod"/>
-          <include name="driverQuit"/>
         </methods>
-      </class> <!-- com.obsqura.TestNGFramework.AnnotationSample -->
+      </class> <!-- com.obsqura.TestNGFramework.DropDown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
